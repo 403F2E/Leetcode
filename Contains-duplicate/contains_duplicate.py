@@ -10,6 +10,7 @@
 # from typing import List
 
 # def containsDuplicate(nums: List[int]) -> bool:
+#     # The defaultdict in pre-imported in leetcode 
 #     hm = defaultdict(int)
 #
 #     for num in nums:

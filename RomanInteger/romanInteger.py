@@ -10,4 +10,4 @@ class Solution:
         return number+roman[s[-1]]
 
 s = str(input("Enter a roman number : "))
-print(romanToInt(s))
+print(Solution().romanToInt(s))

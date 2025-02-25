@@ -1,6 +1,7 @@
+
 def isPalindrome(x: int):
-    x = str(x)
-    if x == x[::-1]:
+    y: str = str(x)
+    if x == y[::-1]:
         return True
     else :
         return False

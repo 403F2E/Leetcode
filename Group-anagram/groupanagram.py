@@ -11,6 +11,7 @@ def groupAnagram(strs: list[str]) -> list[list[str]]:
         res.append(strs)
         return res
 
+    # the defaultdict function is pre-imported in leetcode 
     anagroup = defaultdict(list)
     for word in strs:
         sorted_w = ''.join(sorted(word))
