@@ -24,6 +24,8 @@ def isValid(s: str) -> bool:
                 return False
             stack.pop()
     
+    # another solution for this part :
+    # return len(stack) == 0
     if not len(stack):
         return True
     return False
