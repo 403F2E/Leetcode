@@ -6,6 +6,5 @@ Given a string s, return true if it is a palindrome, or false otherwise.
 '''
 def isPalindrome(self, s: str) -> bool:
     import re
-    s = s.lower()
-    s = re.sub("[\s_\W]", "", s)
+    s = re.sub("[i\s_\W]", "", s).lower()
     return s == s[::-1]
