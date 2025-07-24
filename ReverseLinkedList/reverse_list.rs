@@ -5,7 +5,6 @@
 use std::convert::From;
 use std::fmt;
 
-/* ListNode base Structure for the problem */
 #[derive(PartialEq, Eq, Clone, Debug)]
 pub struct ListNode {
     pub val: i32,
@@ -35,8 +34,6 @@ impl From<Vec<i32>> for ListNode {
         head
     }
 }
-
-/* The 2 Solutions: using loop and recursivity */
 
 type Node = Option<Box<ListNode>>;
 
@@ -90,13 +87,10 @@ fn main() {
     let example3 = ListNode::from(vec![3]);
     let example4 = ListNode::from(vec![]);
 
-    let res1 = reverse_list(Some(Box::new(example1)));
-    let res2 = reverse_list(Some(Box::new(example2)));
-    let res3 = reverse_list(Some(Box::new(example3)));
-    let res4 = reverse_list(Some(Box::new(example4)));
+    let res1 = reverse_list(example1);
+    let res2 = reverse_list(example2);
+    let res3 = reverse_list(example3);
+    let res4 = reverse_list(example4);
 
-    println!("{}", res1.unwrap());
-    println!("{}", res2.unwrap());
-    println!("{}", res3.unwrap());
-    println!("{}", res4.unwrap());
+    println!("{}",);
 }
